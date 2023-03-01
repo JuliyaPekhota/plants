@@ -1,0 +1,1183 @@
+@font-face {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Inika-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'InikaBold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/Inika-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'InterBold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/Inter-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+
+:root {
+    --main-background: #EDF2EC;
+    --green-color: #499A18;
+    --orange-color: #E06733;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #636060;
+    font-family: 'Inika', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth; 
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: var(--orange-color);
+    transition: color 0.5s ease;
+}
+
+.nav a:active {
+    color: var(--orange-color);
+}
+
+body {
+    width: 100%
+}
+
+.burger {
+    display: none;
+}
+
+.container, .navbar {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 109px;
+}
+
+h1, h1 span {
+    font-family: 'InterBold';
+    font-size: 45px;
+    line-height: 50px;
+}
+
+h2, h2 span {
+    font-size: 40px;
+    line-height: 52px;
+    color: var(--green-color);
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+h3, h3 span {
+    font-size: 40px;
+    line-height: 52px;
+    padding-bottom: 40px;
+    color: #000;
+}
+
+p {
+    font-size: 20px;
+    font-family: inherit;
+}
+
+button {
+    font-size: 16px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:hover, button.active {
+    color: #fff;
+    background-color: var(--orange-color);
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.orange {
+    color: var(--orange-color);
+}
+
+section, .footer {
+    background-color: #fff;
+}
+
+header, .welcome, .service, .contacts {
+    background-color: var(--main-background);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+
+.logo {
+    padding-bottom: 8px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 46px;
+}
+
+.nav li {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.nav a {
+    font-size: 16px;
+    color: #010201;
+}
+
+.mainContent {
+    width: 549px;
+    font-family: 'Inter';
+    padding: 98px 0 94px 0;
+}
+
+.mainContent p {
+    line-height: 35px;
+    margin: 42px 0 48px 0;
+}
+
+.mainBanner {
+    width: 449px;
+    height: 407px;
+    margin-top: 62px;
+}
+
+.green {
+    color: var(--green-color);
+}
+
+.mainButton {
+    font-family: inherit;
+    width: 158px;
+    height: 44px;
+    text-transform: uppercase;
+    border: 2px solid var(--orange-color);
+    border-radius: 10px;
+    color: #000;
+}
+
+.about .container {
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.about .content {
+    width: 605px;
+    font-family: 'Inter';
+    padding-top: 161px;
+    padding-bottom: 94px;
+}
+
+.about .image {
+    padding: 93px 0 94px 0;
+}
+
+.about .content p {
+    line-height: 30px;
+}
+
+.service .container {
+    flex-direction: column;
+    padding: 40px 109px 121px 109px;
+    flex-wrap: nowrap;
+}
+
+.service .head {
+    display: flex;
+    max-width: 1007px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 142px;
+    padding-bottom: 40px;
+}
+
+.tabs {
+    display: flex;
+    gap: 38px;
+    margin-top: 29px;
+}
+
+.button {
+    color: var(--orange-color);
+    font-size: 20px;
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
+    width: 161px;
+    height: 50px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 330px));
+    gap: 55px 116px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.20);
+    border-radius: 16px;
+    transition: all 0.5s ease;
+}
+
+.description p {
+    font-size: 16px;
+    font-family: 'Inter';
+    color: #717171;
+    line-height: 20px;
+}
+
+.description .title {
+    font-size: 20px;
+    color: var(--orange-color);
+    text-align: center;
+    font-family: 'InterBold';
+    margin: 10px 0 13px 0;
+}
+
+.description {
+    border: 1px solid #E3E1D5;
+    border-radius: 0 0 20px 20px;
+    padding: 0 30px 36px 31px;
+}
+
+.prices .container {
+    padding-top: 37px;
+    padding-bottom: 116px;
+}
+
+.callUs {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.callUs .image {
+    width: 152px;
+    height: 175px;
+}
+
+.callUs .button {
+    margin-bottom: 39px;
+    font-weight: 700;
+}
+
+.callUs h3, .callUs h3 .green {
+    font-family: 'InterBold';
+    text-align: right;
+    line-height: 50px;
+}
+
+.prices h2 {
+    font-family: 'InterBold';
+    color:#000;
+    padding-bottom: 57px;
+}
+
+.prices h2 .green {
+    font-family: 'InterBold';
+}
+
+.selectsPrice .selectContent {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #D6E7D2;
+    border-radius: 0 0 20px 20px;
+    padding: 12px 40px;
+    z-index: 2;
+}
+
+.selectsPrice .selectContent p {
+    font-family: 'Inter';
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+    margin-bottom: 6px;
+}
+
+.selectsPrice .selectContent .cost {
+    font-size: 16px;
+    font-family: 'InterBold';
+    line-height: 20px;
+    color: var(--orange-color);
+}
+
+.selectsPrice .selectContent .currency {
+    font-size: 12px;
+    font-family: 'InterBold';
+    color: var(--orange-color);
+}
+
+.selectsPrice .selectContent .rate {
+    font-size: 12px;
+    font-family: 'Inter';
+    color: #000;
+}
+
+.selectsPrice .selectContent .selectBtn {
+    display: flex;
+    justify-content: center;
+    width: 86px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #717171;
+    font-size: 14px;
+    font-family: 'InterBold';
+    padding: 3px 0;
+    margin-top: 12px;
+}
+
+.selectsPrice .selectContent hr {
+    width: 164px;
+    color: #AEA1A1;
+    margin: 0 auto 6px;
+}
+
+.selectsPrice {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border: 1px solid #E3E1D5;
+    border-radius: 16px;
+    padding: 34px 41px;
+}
+
+.wrapSelect {
+    width: 250px;
+    cursor: pointer;
+    position: relative;
+}
+
+.select {
+    position: relative;
+    height: 50px;
+    border-radius: 20px;
+    background-color: var(--main-background);
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.label {
+    font-size: 20px;
+    color:#000;
+    font-family: "InterBold";
+}
+
+.wrapSelect.show {
+    z-index: 2;
+}
+.wrapSelect.show .select {
+    background-color:#D6E7D2;
+    transition: background-color 0.5s ease;
+}
+
+.wrapSelect .selectContent {
+    display: none;
+}
+
+.wrapSelect.show .selectContent {
+    display: block;
+}
+
+.select:hover {
+    background-color:#D6E7D2;
+    transition: background-color 0.5s ease;
+}
+
+.arrow, .arrowDown {
+    width: 16px;
+    height: 16px;
+    background: url("./images/arrow.svg") no-repeat;
+}
+
+.wrapSelect.show .arrow {
+    background: url("./images/arrow_up.svg") no-repeat;
+}
+
+.contacts .container {
+    padding-top: 53px;
+    justify-content: start;
+    flex-wrap: wrap-reverse;
+    gap: 113px;
+}
+
+.contactSelect {
+    width: 450px;
+    height: 50px;
+    position: relative;
+    background-color: #D6E7D2;
+    border-radius: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    float: right;
+}
+  
+.contactSelect .selectItem {
+    height: inherit;
+    width: inherit;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+
+    font-size: 20px;
+    color:#717171;
+    letter-spacing: 1.5px;
+    font-family: "Inter";
+    cursor: pointer;
+}
+  
+.contactSelect::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    background: url("./images/arrow_down01.svg") no-repeat;
+    right: 35px;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+}
+
+.contactSelect .selectList {
+    display: none;
+}
+
+.contactSelect.drop::after {
+    background: url("./images/arrow_up01.svg") no-repeat;
+}
+
+.contactSelect.drop, .contactSelect .selectItem:hover {
+    background-color: #C1E698;
+}
+
+.contactSelect.drop .selectList {
+    position: absolute;
+    width: inherit;
+    top: 50px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    background-color: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 27px 35px;  
+    z-index: 2; 
+}
+
+.contactSelect.drop .selectList span {
+    color: var(--green-color);
+    font-size: 16px;
+    font-family: "Inter";
+    line-height: 35px;
+    cursor: pointer;
+    border-bottom: 1px solid #D9D9D9;
+    letter-spacing: 0.7px;
+}
+
+.contactSelect.drop .selectList span:hover {
+    color: #717171;
+    border-bottom: 1px solid #717171;
+}
+
+.contacts .content {
+    flex-grow: 1;
+    position: relative;
+}
+
+.contacts .content .adresses {
+    position: absolute;
+    top: 97px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 17px 0 32px 33px;
+    width: inherit;
+    display: none;
+    z-index: 1;
+}
+
+.contacts .content .adresses.visible {
+    display: block;
+}
+
+.contacts .content .adresses .adress {
+    display: none;
+}
+
+.contacts .content .adresses .adress.visible {
+    display: block;
+}
+
+.contacts .content .adresses .text {
+    width: 322px;
+}
+
+.contacts .content .adresses span {
+    font-size: 16px;
+    font-family: "Inter";
+    line-height: 35px;
+    color: #717171;
+}
+
+.contacts .content .adresses .city span:first-child,
+.contacts .content .adresses .phone span:first-child,
+.contacts .content .adresses .office span:first-child
+{
+    width: 125px;
+    display: inline-block;
+    color: #000;
+}
+
+.contacts .content .adresses .btnCall  {
+    width: 122px;
+    display: block;
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
+    font-family: "InikaBold";
+    font-size: 10px;
+    padding: 7px 29px;
+    text-align: center;
+    color: #717171;
+    margin: 24px auto 0;
+}
+
+.contacts h2 {
+    font-weight: 700;
+    padding: 8px 0 35px 0;
+}
+
+.contacts input {
+    padding-left: 22px;
+}
+
+.contacts .arrowDown {
+    right: 26px;
+}
+
+.footer .container {
+    height: 130px;
+    align-items: center;
+}
+
+.footer p,
+.footer a,
+.footer span {
+    color:#000;
+    font-size: 20px;
+    font-family: "Inter";
+}
+
+.footer a:hover {
+    opacity: 0.7;
+}
+
+.link {
+    padding-left: 12px;
+}
+
+.year {
+    padding: 0 20px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 20px;
+}
+
+.socialIcons img {
+    width: 32px;
+    height: 32px;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+@media only screen and (max-width : 768px) {
+    h1, h1 span, h2, h2 span {
+        font-size: 35px;
+    }
+
+    h2, h2 span {
+        line-height: 45.6px;
+    }
+    
+    .container, .navbar {
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    .welcome .container {
+        flex-direction: row-reverse;
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .logo {
+        width: 77px;
+        padding-bottom: 5px;
+    }
+
+    .navbar {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .nav {
+        gap: 47px;
+    }
+
+    .nav li {
+        height: 48px;
+    }
+    
+    .mainBanner {
+        width: 280px;
+        height: 254px;
+        margin-top: 0;
+    }
+
+    .mainContent {
+        width: 346px;
+        padding: 0;
+    }
+
+    .mainContent p {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 30px 0 35px 5px;
+    }
+
+    .about .container {
+        flex-direction: column-reverse;
+        padding-bottom: 96px;
+    }
+
+    .about .content {
+        width: 100%;
+        padding: 40px 0 68px;
+    }
+
+    .about h2, .about h2 span {
+        padding-bottom: 50px;
+    }
+
+    .about h2, .about h2 span, .contacts h2 {
+        text-align: center;
+    }
+
+    .about .image {
+        width: 250px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .service .container {
+        padding: 60px 50px 70px;
+    }
+
+    .service h2, .service h2 span {
+        padding-bottom: 43px;
+    }
+
+    .service .head {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .tabs {
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(281px, 1fr));
+        gap: 38px 106px;
+    }
+
+    .cards .image {
+        height: 350px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+
+    .cards .description {
+        text-align: center;
+        padding: 0 39px 18px 38px;
+    }
+
+    .cards .description .title {
+        margin: 10px 0;
+    }
+
+    .prices .container {
+        padding-top: 40px;
+        padding-bottom: 88px;
+        flex-wrap: wrap;
+    }
+
+    .prices h2 {
+        padding-left: 15px;
+        padding-bottom: 54px;
+    }
+    
+    .callUs h3, .callUs h3 .green {
+        font-size: 25px;
+        line-height: 35px;
+        padding-bottom: 28px;
+    }
+
+    .callUs {
+        padding-top: 100px;
+    }
+
+    .callUs .button {
+        margin-bottom: 33px;
+    }
+
+    .selectsPrice {
+        padding: 34px 40px 31px;
+    }
+
+    .selectsPrice .select, .selectsPrice .selectContent {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .selectsPrice .selectContent hr {
+        width: 100%;
+    }
+
+    .contacts .container {
+        padding-top: 40px;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 247px;
+    }
+
+    .contacts .image {
+        width: 200px;
+        margin-left: 20px;
+    }
+
+    .contacts h2 {
+        padding-bottom: 104px;
+        letter-spacing: 2px;
+        padding-top: 4px;
+    }
+
+    .contacts .content .adresses {
+        top: 77px;
+    }
+
+    .footer .container {
+        padding: 33px 0 18px;
+        flex-direction: column;
+        gap: 16px;
+        height: auto;
+    }
+
+    .footer .link {
+        padding-left: 0;
+    }
+
+    .footer .socialIcons {
+        padding-top: 9px;
+    }  
+    
+    .footer .year {
+        padding: 0 20px 0 17px;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .nav {
+        left: 100%;
+        top: 0;
+        position: absolute;
+        
+        width: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 5px;
+
+        padding-left: 0;
+        transition: all 0.3s linear;
+    }
+
+    .nav.open {
+        position: fixed;
+        width: 100%;
+        background-color: #fff;
+        left: 40%;
+
+        padding: 40px 0 0 40px;
+        z-index: 2;
+    }
+
+    .nav.open a {
+        display: block;
+        opacity: 1;
+    }
+
+    .nav a {
+        opacity: 0;
+        display: none;
+    }
+    
+    .burger {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 26px;
+        z-index: 3;
+        top: -15px;
+    }
+
+    .burger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #717171;
+        top: 8px;
+        transition: transform 0.3s ease-out;
+    }
+
+    .burger span:nth-child(2) {
+        top: 16px;
+    }
+
+    .burger::after, .burger::before {
+        content: '';
+        background-color: #717171;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        transition: transform 0.3s ease-out;
+    }
+
+    .burger::before {
+        top: 0;
+    }
+
+    .burger::after {
+        bottom: 0;
+    }
+    
+    .burger.active::before {
+        transform: rotate(45deg);
+        top: 12px;
+    }
+
+    .burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 12px;
+    }
+
+    .burger.active span {
+        transform: scale(0);
+    }
+
+    .noscroll {
+        overflow: hidden;
+    }
+    
+    .nav li {
+        width: fit-content;
+    }
+    
+    .wrapMenu {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: var(--main-background);
+        opacity: 0.7;
+        z-index: 1;
+    }
+
+    .wrapSelect {
+        width: auto;
+        max-width: 250px;
+        min-width: 177px;
+    }
+
+    .contacts .content {
+        width: 100%;
+    }
+
+    .contacts .contactSelect {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+@media only screen and (max-width : 380px) {
+
+    .container, .navbar {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .welcome .container {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .mainBanner {
+        display: none;
+    }
+
+    h1, h1 span, h2, h2 span {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    h2, h2 span {
+        line-height: 32px;
+    }
+
+    .mainContent p {
+        margin: 22px 0 25px 0;
+    }
+
+    .mainButton {
+        width: 100px;
+        height: 34px;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    .about .container {
+        padding-bottom: 27px;
+    }
+
+    .about .content {
+        padding: 30px 0 0;
+    }
+
+    .about h2, .about h2 span {
+        padding-bottom: 15px;
+    }
+
+    .about .content p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .about .image {
+        width: 150px;
+    }
+
+    .service .container {
+        padding: 30px 25px;
+    }
+
+    .service h2, .service h2 span {
+        padding-bottom: 40px;
+    }
+
+    .tabs {
+        gap: 10px;
+    }
+
+    .button {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(auto-fit, 280px);
+        justify-content: center;
+        row-gap: 36px;
+    }
+
+    .cards .description .title {
+        margin: 9px 0;
+    }
+
+    .prices .container {
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
+
+    .prices .container .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prices h2 {
+        text-align: center;
+        line-height: 29px;
+        padding-left: 4px;
+        padding-bottom: 36px;
+    }
+
+    .prices .wrapSelect {
+        width: 180px;
+    }
+
+    .selectsPrice {
+        padding: 29px 22px 25px;
+        gap: 14px;
+    }
+
+    input { 
+        padding-left: 30px;
+    }
+
+    input::placeholder {
+        font-size: 15px;
+    }
+
+    .callUs {
+        width: 100%;
+        padding-top: 20px;
+        align-items: center;
+    }
+
+    .callUs h3, .callUs h3 .green {
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 22px;
+    }
+
+    .callUs .image {
+        display: none;
+    }
+
+    .callUs .button {
+        margin: 0;
+    }
+
+    .contacts .container {
+        padding-top: 25px;
+        gap: 132px;
+    }
+
+    .contacts h2 {
+        padding-top: 0;
+        letter-spacing: 0;
+        padding-bottom: 82px;
+    }
+
+    .contacts .image {
+        width: 100px;
+        margin-left: 0;
+    }
+
+    .contacts input::placeholder {
+        font-size: 20px;
+    }
+
+    .contacts input {
+        padding-left: 19px;
+    }
+
+    .contacts .arrowDown {
+        right: 14px;
+    }
+
+    .contacts .contactSelect {
+        width: 100%;
+        max-width: 300px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .contacts .content .adresses {
+        padding: 16px 30px 23px;
+    }
+
+    .contacts .content .adresses .btnCall {
+        margin-top: 15px;
+    }
+
+    .contacts .content .adresses .text {
+        width: 100%;
+    }
+
+    .contacts .content .adresses .city span:first-child, 
+    .contacts .content .adresses .phone span:first-child, 
+    .contacts .content .adresses .office span:first-child {
+        width: 65px;
+        line-height: normal;
+    }
+
+    .footer .container {
+        padding-top: 22px;
+        gap: 14px;
+    }
+
+    .footer .socialIcons {
+        padding: 0;
+    }
+
+}
+
+
+
+
+

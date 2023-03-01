@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Plants Part 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header> 
+            <div class="navbar">
+                <img src="./images/logo.svg" class="logo" alt="logo" >
+                <nav>
+                    <div class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav">
+                        <li>
+                            <a href="#welcome">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About us</a>
+                        </li>
+                        <li>
+                            <a href="#service">Service</a>
+                        </li>
+                        <li>
+                            <a href="#prices">Price</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>    
+        <main>
+            <section class="welcome" id="welcome">
+                <div class="container">
+                    <img src="./images/leafs.png" class="mainBanner" alt="main banner leafs" >
+                    <div class="mainContent">
+                        <h1>We grow <span class="green">plants</span> and give you oxygen</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <button class="mainButton">Learn more</button>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="container">
+                    <img src="./images/houseplant.png" class="image" alt="houseplant" >
+                    <div class="content">
+                        <h2>We are <span class="orange">professional<br > experienced</span> gardeners</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    </div>
+                </div>
+            </section>
+            <section class="service" id="service">
+                <div class="container">
+                    <div class="head">
+                        <h2>Service and our<br /> projects</h2>
+                        <div class="tabs">
+                            <button class="button">Gardens</button>
+                            <button class="button">Lawn</button>
+                            <button class="button">Planting</button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card" data-group="1">
+                            <img src="./images/img.png" class="image" alt="Garden care" >
+                            <div class="description">
+                                <p class="title">Garden care</p>
+                                <p>Lorem Ipsum has been the industry</p>
+                            </div>    
+                        </div>
+                        <div class="card" data-group="3">
+                            <img src="./images/img01.png" class="image" alt="Planting" >
+                            <div class="description">
+                                <p class="title">Planting</p>
+                                <p>Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                        <div class="card" data-group="2">
+                            <img src="./images/img02.png" class="image" alt="Lawn care" >
+                            <div class="description">
+                                <p class="title">Lawn care</p>
+                                <p>Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                        <div class="card" data-group="3">
+                            <img src="./images/img03.png" class="image" alt="Planting" >
+                            <div class="description">
+                                <p class="title">Planting</p>
+                                <p>Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                        <div class="card" data-group="1">
+                            <img src="./images/img04.png" class="image" alt="Garden care" >
+                            <div class="description">
+                                <p class="title">Garden care</p>
+                                <p>Lorem Ipsum has been the industry</p>
+                            </div>    
+                        </div>
+                        <div class="card" data-group="3">
+                            <img src="./images/img05.png" class="image" alt="Planting" >
+                            <div class="description">
+                                <p class="title">Planting</p>
+                                <p>Lorem Ipsum has been the industry</p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="prices" id="prices">
+                <div class="container">
+                    <div class="content">
+                        <h2>Prices</h2>
+                        <div class="selectsPrice">
+
+                            <div class="wrapSelect" onclick="openListPrice(this)">
+                                <div class="select">
+                                    <div class="label">Basics</div>
+                                    <div class="arrow"></div>
+                                </div>
+                                
+                                <div class="selectContent">
+                                    <hr>
+                                    <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <div>
+                                        <span class="cost"><span class="currency">$</span>15</span> <span class="rate">/ per hour</span> 
+                                    </div>
+                                    <a href="#contacts" class="selectBtn">Order</a>
+                                </div>
+                            </div>
+                            <div class="wrapSelect" onclick="openListPrice(this)">
+                                <div class="select">
+                                    <div class="label">Standard</div>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="selectContent">
+                                    <hr>
+                                    <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <div>
+                                        <span class="cost"><span class="currency">$</span>25</span> <span class="rate">/ per hour</span> 
+                                    </div>
+                                    <a href="#contacts" class="selectBtn">Order</a>
+                                </div>
+                            </div>
+                            <div class="wrapSelect" onclick="openListPrice(this)">
+                                <div class="select">
+                                    <div class="label">Pro care</div>
+                                    <div class="arrow"></div>
+                                </div>
+
+                                <div class="selectContent">
+                                    <hr>
+                                    <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <div>
+                                        <span class="cost"><span class="currency">$</span>35</span> <span class="rate">/ per hour</span> 
+                                    </div>
+                                    <a href="#contacts" class="selectBtn">Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="callUs">
+                        <h3>Our best <span class="green">gardeners</span> are<br > ready to help you</h3>
+                        <button class="button">Contact us</button>
+                        <img src="./images/leafs_mini.png" class="image" alt="leafs mini" >
+                    </div>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <div class="container">
+                    <img src="./images/contact_woman.png" id="imgWoman" class="image" alt="woman" >
+                    <div class="content">
+                        <h2>Contact us</h2>
+                        <div class="contactSelect">
+                            <div class="selectItem">City</div>
+                            <div class="selectList">
+                                <span data-value="0">Canandaigua, NY</span>
+                                <span data-value="1">New York City</span>
+                                <span data-value="2">Yonkers, NY</span>
+                                <span data-value="3">Sherrill, NY</span>
+                            </div>
+                            <div class="adresses">
+                                <div class="adress">
+                                    <div class="text">
+                                        <div class="city">
+                                            <span>City:</span>
+                                            <span>Canandaigua, NY</span>
+                                        </div>
+                                        <div class="phone">
+                                            <span>Phone:</span>
+                                            <span>+1 585 393 0001</span>
+                                        </div>
+                                        <div class="office">
+                                            <span>Office adress:</span>
+                                            <span>151 Charlotte Street</span>
+                                        </div>
+                                        <a class="btnCall" href="tel:+15853930001">Call us</a>
+                                    </div>
+                                </div>
+                                <div class="adress">
+                                    <div class="text">
+                                        <div class="city">
+                                            <span>City:</span>
+                                            <span>New York City</span>
+                                        </div>
+                                        <div class="phone">
+                                            <span>Phone:</span>
+                                            <span>+1 212 456 0002</span>
+                                        </div>
+                                        <div class="office">
+                                            <span>Office adress:</span>
+                                            <span>9 East 91st Street</span>
+                                        </div>
+                                        <a class="btnCall" href="tel:+12124560002">Call us</a>
+                                    </div>
+                                </div>
+                                <div class="adress">
+                                    <div class="text">
+                                        <div class="city">
+                                            <span>City:</span>
+                                            <span>Yonkers, NY</span>
+                                        </div>
+                                        <div class="phone">
+                                            <span>Phone:</span>
+                                            <span>+1 914 678 0003</span>
+                                        </div>
+                                        <div class="office">
+                                            <span>Office adress:</span>
+                                            <span>511 Warburton Ave</span>
+                                        </div>
+                                        <a class="btnCall" href="tel:+19146780003">Call us</a>
+                                    </div>
+                                </div>
+                                <div class="adress">
+                                    <div class="text">
+                                        <div class="city">
+                                            <span>City:</span>
+                                            <span>Sherrill, NY</span>
+                                        </div>
+                                        <div class="phone">
+                                            <span>Phone:</span>
+                                            <span>+1 315 908 0004</span>
+                                        </div>
+                                        <div class="office">
+                                            <span>Office adress:</span>
+                                            <span>14 WEST Noyes BLVD</span>
+                                        </div>
+                                        <a class="btnCall" href="tel:+13159080004">Call us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p>©<span class="year">2022</span> <a target="_blank" href="https://github.com/JuliyaPekhota" class="githubLink">github</a></p>
+                <a href="https://rs.school/js-stage0/" target="_blank" class="link">Rolling Scopes School</a>
+                <ul class="socialIcons">
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="./images/inst.svg" alt="instagram" ></a></li>
+                    <li><a href="https://ru-ru.facebook.com/" target="_blank"><img src="./images/fb.svg" alt="facebook" ></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="./images/tw.svg" alt="twitter" ></a></li>
+                    <li><a href="https://ru.pinterest.com/" target="_blank"><img src="./images/pinterest.svg" alt="pinterest" ></a></li>
+                </ul>
+            </div>
+        </footer>
+  </body>
+  <script src="./index.js"></script>
+  <script src="./serviceTabs.js"></script>
+  <script src="./contactDropDown.js"></script>
+</html>
